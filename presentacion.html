@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practica Cojali 1 - David Miguel Garcia</title>
-    <link rel="stylesheet" href="Style.css">
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -14,46 +15,59 @@
     </header>
 
     <main>
-        <section id="sobre-mi">
+        <!-- Secciones originales -->
+        <section class="seccion-blanca">
             <h2>Sobre mí</h2>
-            <p>Hola, soy David. Me apasiona la programación y actualmente estoy aprendiendo a construir soluciones web[cite: 1]. Me considero una persona curiosa y dispuesta a enfrentar retos técnicos[cite: 1].</p>
+            <p>Hola, soy David. Me apasiona la programación y actualmente estoy aprendiendo a construir soluciones web[cite: 1].</p>
         </section>
 
-        <section id="experiencia">
+        <section class="seccion-blanca">
             <h2>Educación y Habilidades</h2>
             <ul>
-                <li>Curso de Desarrollo - Cojali[cite: 1]</li>
-                <li>Automatización de páginas web - Logirail[cite: 1]</li>
-                <li>Habilidades: HTML, CSS, Git y Trabajo en equipo[cite: 1]</li>
+                <li>Curso de Programación/Desarrollo - Cojali (En curso)[cite: 1]</li>
+                <li>Automatizacion de paginas web - Logirail[cite: 1]</li>
+                <li>Desarrollo Web (HTML, CSS), Git y GitHub[cite: 1]</li>
             </ul>
         </section>
 
-        <section id="contacto">
-            <h2>Sugerencias y Contacto</h2>
-            <p>Usa este formulario para enviarme cualquier pregunta:</p>
+        <!-- Formulario de Registro (Estilo solicitado) -->
+        <section class="seccion-blanca">
+            <h2 class="azul-fuerte">DATOS DE REGISTRO</h2>
             
-            <form action="#">
-                <div class="campo">
-                    <label>Nombre</label>
-                    <input type="text" id="nombre">
-                </div>
-                
-                <div class="campo">
-                    <label >Tu mensaje</label>
-                    <textarea id="mensaje"rows="4" ></textarea>
-                </div>
+            <form>
+                <h3>Identificación personal</h3>
+                <label>Nombre:</label>
+                <input type="text" class="caja">
 
-                <button type="submit">Enviar sugerencia</button>
+                <label>Primer apellido:</label>
+                <input type="text" class="caja">
+
+                <label>Segundo apellido:</label>
+                <input type="text" class="caja" placeholder="opcional">
+
+                <h3>Datos de contacto</h3>
+                <label>Teléfono:</label>
+                <input type="tel" class="caja">
+
+                <label>Email:</label>
+                <input type="email" class="caja">
+
+                <h3>Género</h3>
+                <input type="radio" name="genero"> Hombre
+                <input type="radio" name="genero"> Mujer
+                <input type="radio" name="genero"> Otro
+
+                <br><br>
+                <button type="button" class="boton-enviar">ENVIAR</button>
             </form>
         </section>
     </main>
 
     <footer>
-        <p>
-            <a href="https://github.com/david6940" target="_blank">GitHub</a> | 
-            <a href="mailto:davidmiguelgarciagarcia@gmail.com">Correo Electrónico</a>[cite: 1]
-        </p>
-        <p>&copy; 2026 David Miguel Garcia</p>
+        <hr>
+        <h2>Contacto</h2>
+        <p>GitHub: <a href="https://github.com/david6940" target="_blank">Mi Perfil</a>[cite: 1]</p>
+        <p>Email: <a href="mailto:davidmiguelgarciagarcia@gmail.com">Envíame un correo</a>[cite: 1]</p>
     </footer>
 
 </body>
