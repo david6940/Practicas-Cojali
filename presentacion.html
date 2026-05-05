@@ -4,40 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practica Cojali 1 - David Miguel Garcia</title>
+    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
 
-    <h1>David Miguel Garcia Garcia</h1>
-    <p>Desarrollador en formación | Entusiasta de la tecnología</p>
+    <header>
+        <h1>David Miguel Garcia Garcia</h1>
+        <p>Desarrollador en formación | Entusiasta de la tecnología</p>
+    </header>
 
-    <hr>
+    <main>
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>Hola, soy David. Me apasiona la programación y actualmente estoy aprendiendo a construir soluciones web[cite: 1]. Me considero una persona curiosa y dispuesta a enfrentar retos técnicos[cite: 1].</p>
+        </section>
 
-    <h2>Sobre mí</h2>
-    <p>Hola, soy David. Me apasiona la programación y actualmente estoy aprendiendo a construir soluciones web. Me considero una persona curiosa y siempre dispuesta a enfrentar nuevos retos técnicos.</p>
+        <section id="experiencia">
+            <h2>Educación y Habilidades</h2>
+            <ul>
+                <li>Curso de Desarrollo - Cojali[cite: 1]</li>
+                <li>Automatización de páginas web - Logirail[cite: 1]</li>
+                <li>Habilidades: HTML, CSS, Git y Trabajo en equipo[cite: 1]</li>
+            </ul>
+        </section>
 
-    <h2>Educación</h2>
-    <ul>
-        <li>Curso de Programación/Desarrollo - Cojali (En curso)</li>
-        <li>Automatizacion de paginas web - Logirail</li>
-    </ul>
+        <section id="contacto">
+            <h2>Sugerencias y Contacto</h2>
+            <p>Usa este formulario para enviarme cualquier pregunta:</p>
+            
+            <form action="#">
+                <div class="campo">
+                    <label>Nombre</label>
+                    <input type="text" id="nombre">
+                </div>
+                
+                <div class="campo">
+                    <label >Tu mensaje</label>
+                    <textarea id="mensaje"rows="4" ></textarea>
+                </div>
 
-    <h2>Habilidades Laborales</h2>
-    <ul>
-        <li>Desarrollo Web (HTML, CSS)</li>
-        <li>Gestión de versiones con Git y GitHub</li>
-        <li>Resolución de problemas técnicos</li>
-        <li>Trabajo en equipo y comunicación efectiva</li>
-    </ul>
+                <button type="submit">Enviar sugerencia</button>
+            </form>
+        </section>
+    </main>
 
-    <h2>Mis Enlaces y Contacto</h2>
-    <p>Puedes ver mis trabajos o contactarme en los siguientes enlaces:</p>
-    <ul>
-        <li><a href="https://github.com/david6940" target="_blank">Mi Perfil de GitHub</a></li>
-        <li><a href="davidmiguelgarciagarcia@gmail.com">Envíame un correo</a></li>
-    </ul>
-
-    <br>
-    <hr>
+    <footer>
+        <p>
+            <a href="https://github.com/david6940" target="_blank">GitHub</a> | 
+            <a href="mailto:davidmiguelgarciagarcia@gmail.com">Correo Electrónico</a>[cite: 1]
+        </p>
+        <p>&copy; 2026 David Miguel Garcia</p>
+    </footer>
 
 </body>
 </html>

@@ -1,0 +1,86 @@
+ body {
+     font-family: 'Segoe UI', Arial, sans-serif;
+     line-height: 1.6;
+     color: #333;
+     max-width: 750px;
+     margin: 0 auto;
+     padding: 20px;
+     background-color: #f4f7f6;
+ }
+
+ header {
+     background-color: #2c3e50;
+     color: white;
+     padding: 30px;
+     text-align: center;
+     border-radius: 8px 8px 0 0;
+ }
+
+ header h1 {
+     margin: 0;
+ }
+
+ section {
+     background: white;
+     padding: 20px;
+     border: 1px solid #ddd;
+ }
+
+ section:last-of-type {
+     border-radius: 0 0 8px 8px;
+ }
+
+ h2 {
+     color: #2c3e50;
+     border-bottom: 2px solid #3498db;
+     padding-bottom: 5px;
+ }
+
+ /* Estilo del formulario */
+ form {
+     display: flex;
+     flex-direction: column;
+     gap: 15px;
+     margin-top: 20px;
+ }
+
+ .campo {
+     display: flex;
+     flex-direction: column;
+ }
+
+ input,
+ textarea {
+     padding: 10px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     font-size: 1rem;
+ }
+
+ button {
+     background-color: #3498db;
+     color: white;
+     border: none;
+     padding: 10px;
+     border-radius: 4px;
+     cursor: pointer;
+     font-weight: bold;
+ }
+
+ button:hover {
+     background-color: #2980b9;
+ }
+
+ /* Footer para los enlaces de contacto */
+ footer {
+     text-align: center;
+     margin-top: 20px;
+     padding: 20px;
+     font-size: 0.9rem;
+ }
+
+ footer a {
+     color: #3498db;
+     text-decoration: none;
+     margin: 0 10px;
+ }
