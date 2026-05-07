@@ -1,77 +1,87 @@
-/* Color de fondo para toda la página */
+/* Estilos generales */
 body {
+    background-color: red; 
     font-family: Arial, sans-serif;
-    background-color: #dbeafe; /* Azul grisáceo muy suave */
     margin: 0;
-    padding: 20px;
-    color: #333;
+    padding: 0;
 }
 
-/* Encabezado centrado */
 header {
-    text-align: center;
-    color: #1e40af;
-    margin-bottom: 25px;
-}
-
-/* Estilo para los bloques de contenido (tarjetas blancas) */
-.seccion-blanca {
-    max-width: 800px;
-    margin: 0 auto 20px auto;
-    background-color: #ffffff;
-    padding: 25px;
-    border: 1px solid #cbd5e1;
-    border-radius: 8px;
-}
-
-/* Títulos en azul */
-.azul-fuerte {
-    color: #1e40af;
-    text-transform: uppercase;
-}
-
-h3 {
-    color: #475569;
-    border-bottom: 1px solid #e2e8f0;
-    padding-bottom: 10px;
-}
-
-/* Estilo para las cajas de texto (Clase sencilla) */
-.caja {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0 15px 0;
-    border: 1px solid #94a3b8;
-    border-radius: 4px;
-    display: block;
-    box-sizing: border-box; /* Importante para que no se salga del borde */
-}
-
-/* Botón enviar en verde */
-.boton-enviar {
-    background-color: #16a34a;
+    background-color: #20639b;
     color: white;
-    border: none;
-    padding: 12px 35px;
-    font-weight: bold;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 4px;
+    padding: 20px;
+    text-align: center;
 }
 
-.boton-enviar:hover {
-    background-color: #15803d;
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
 }
 
-/* Enlaces */
-a {
-    color: #1e40af;
+.menu a {
+    color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-footer {
-    text-align: center;
+.tarjeta {
+    background-color: white;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.contenedor-proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.proyecto {
+    background-color: #f1f1f1;
+    padding: 15px;
+    flex: 1; 
+    min-width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.azul { color: #20639b; }
+.campo {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 10px 0;
+    display: block;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.redes a {
+    color: white;
+    text-decoration: none;
 }

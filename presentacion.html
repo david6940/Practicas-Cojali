@@ -2,72 +2,78 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practica Cojali 1 - David Miguel Garcia</title>
-    <!-- Enlace al archivo CSS -->
-    <link rel="stylesheet" href="style.css">
+    <title>Portfolio - David Miguel Garcia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
 
     <header>
         <h1>David Miguel Garcia Garcia</h1>
-        <p>Desarrollador en formación | Entusiasta de la tecnología</p>
+        <nav class="menu">
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#educacion">Educación</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#registro">Registro</a>
+        </nav>
     </header>
 
     <main>
-        <!-- Secciones originales -->
-        <section class="seccion-blanca">
+        <section id="sobre-mi" class="tarjeta">
             <h2>Sobre mí</h2>
-            <p>Hola, soy David. Me apasiona la programación y actualmente estoy aprendiendo a construir soluciones web[cite: 1].</p>
+            <p>Hola, soy David. Me apasiona la programación y actualmente estoy aprendiendo a construir soluciones web.</p>
         </section>
 
-        <section class="seccion-blanca">
+        <section id="educacion" class="tarjeta">
             <h2>Educación y Habilidades</h2>
             <ul>
-                <li>Curso de Programación/Desarrollo - Cojali (En curso)[cite: 1]</li>
-                <li>Automatizacion de paginas web - Logirail[cite: 1]</li>
-                <li>Desarrollo Web (HTML, CSS), Git y GitHub[cite: 1]</li>
+                <li>Curso de Programación - Cojali</li>
+                <li>Automatización web - Logirail</li>
+                <li>HTML, CSS, Git y GitHub</li>
             </ul>
         </section>
 
-        <!-- Formulario de Registro (Estilo solicitado) -->
-        <section class="seccion-blanca">
-            <h2 class="azul-fuerte">DATOS DE REGISTRO</h2>
-            
+        <section id="proyectos" class="tarjeta">
+            <h2>Mis Proyectos</h2>
+            <div class="contenedor-proyectos">
+                <div class="proyecto">
+                    <h3>Calculadora JS</h3>
+                    <p>Un proyecto para practicar lógica con JavaScript.</p>
+                </div>
+                <div class="proyecto">
+                    <h3>E-commerce básico</h3>
+                    <p>Tienda online sencilla usando HTML y CSS.</p>
+                </div>
+                <div class="proyecto">
+                    <h3>Web de Viajes</h3>
+                    <p>Maquetación de una página con Flexbox y Grid.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="registro" class="tarjeta">
+            <h2 class="azul">DATOS DE REGISTRO</h2>
             <form>
-                <h3>Identificación personal</h3>
-                <label>Nombre:</label>
-                <input type="text" class="caja">
-
-                <label>Primer apellido:</label>
-                <input type="text" class="caja">
-
-                <label>Segundo apellido:</label>
-                <input type="text" class="caja" placeholder="opcional">
-
-                <h3>Datos de contacto</h3>
-                <label>Teléfono:</label>
-                <input type="tel" class="caja">
-
-                <label>Email:</label>
-                <input type="email" class="caja">
-
-                <h3>Género</h3>
-                <input type="radio" name="genero"> Hombre
-                <input type="radio" name="genero"> Mujer
-                <input type="radio" name="genero"> Otro
-
+                <p><b>Identificación</b></p>
+                <input type="text" class="campo" placeholder="Nombre">
+                <input type="text" class="campo" placeholder="Apellidos">
+                
+                <p><b>Género</b></p>
+                <input type="radio"> Hombre
+                <input type="radio"> Mujer
+                
                 <br><br>
-                <button type="button" class="boton-enviar">ENVIAR</button>
+                <button type="button">ENVIAR</button>
             </form>
         </section>
     </main>
 
     <footer>
-        <hr>
-        <h2>Contacto</h2>
-        <p>GitHub: <a href="https://github.com/david6940" target="_blank">Mi Perfil</a>[cite: 1]</p>
-        <p>Email: <a href="mailto:davidmiguelgarciagarcia@gmail.com">Envíame un correo</a>[cite: 1]</p>
+        <p>&copy; 2024 David Miguel Garcia Garcia - Todos los derechos reservados</p>
+        <div class="redes">
+            <a href="https://github.com/david6940" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:davidmiguelgarciagarcia@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
     </footer>
 
 </body>
