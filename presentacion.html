@@ -6,10 +6,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="Style.css">
 </head>
-<body>
+<body id="body">
 
     <header>
-        <h1>David Miguel Garcia Garcia</h1>
+        <div class="header-top">
+            <h1>David Miguel Garcia Garcia</h1>
+            <button id="theme-toggle" class="btn-tema">🌙 Modo Oscuro</button>
+        </div>
         <nav class="menu">
             <a href="#sobre-mi">Sobre mí</a>
             <a href="#educacion">Educación</a>
@@ -21,32 +24,23 @@
     <main>
         <section id="sobre-mi" class="tarjeta">
             <h2>Sobre mí</h2>
-            <p>Hola, soy David. Me apasiona la programación y actualmente estoy aprendiendo a construir soluciones web.</p>
-        </section>
-
-        <section id="educacion" class="tarjeta">
-            <h2>Educación y Habilidades</h2>
-            <ul>
-                <li>Curso de Programación - Cojali</li>
-                <li>Automatización web - Logirail</li>
-                <li>HTML, CSS, Git y GitHub</li>
-            </ul>
+            <p>Hola, soy David. Me apasiona la programación y actualmente aprendiendo desarrollo web.</p>
         </section>
 
         <section id="proyectos" class="tarjeta">
             <h2>Mis Proyectos</h2>
-            <div class="contenedor-proyectos">
+            <div class="grid-proyectos">
                 <div class="proyecto">
                     <h3>Calculadora JS</h3>
-                    <p>Un proyecto para practicar lógica con JavaScript.</p>
+                    <p>Lógica con JavaScript.</p>
                 </div>
                 <div class="proyecto">
-                    <h3>E-commerce básico</h3>
-                    <p>Tienda online sencilla usando HTML y CSS.</p>
+                    <h3>E-commerce</h3>
+                    <p>Tienda sencilla en HTML/CSS.</p>
                 </div>
                 <div class="proyecto">
                     <h3>Web de Viajes</h3>
-                    <p>Maquetación de una página con Flexbox y Grid.</p>
+                    <p>Maquetación profesional.</p>
                 </div>
             </div>
         </section>
@@ -54,27 +48,43 @@
         <section id="registro" class="tarjeta">
             <h2 class="azul">DATOS DE REGISTRO</h2>
             <form>
-                <p><b>Identificación</b></p>
                 <input type="text" class="campo" placeholder="Nombre">
-                <input type="text" class="campo" placeholder="Apellidos">
-                
-                <p><b>Género</b></p>
-                <input type="radio"> Hombre
-                <input type="radio"> Mujer
-                
-                <br><br>
+                <input type="text" class="campo" placeholder="Email">
                 <button type="button">ENVIAR</button>
             </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 David Miguel Garcia Garcia - Todos los derechos reservados</p>
+        <p>&copy; 2026 David Miguel Garcia Garcia</p>
         <div class="redes">
-            <a href="https://github.com/david6940" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/david6940"><i class="fab fa-github"></i></a>
             <a href="mailto:davidmiguelgarciagarcia@gmail.com"><i class="fas fa-envelope"></i></a>
         </div>
     </footer>
 
+    <script>
+        const btn = document.getElementById('theme-toggle');
+        const body = document.getElementById('body');
+
+        // Cargar tema guardado (Punto 4)
+        if (localStorage.getItem('tema') === 'oscuro') {
+            body.classList.add('dark-mode');
+            btn.innerText = '☀️ Modo Claro';
+        }
+
+        btn.onclick = () => {
+            body.classList.toggle('dark-mode');
+            
+            // Guardar en localStorage (Punto 3)
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('tema', 'oscuro');
+                btn.innerText = '☀️ Modo Claro';
+            } else {
+                localStorage.setItem('tema', 'claro');
+                btn.innerText = '🌙 Modo Oscuro';
+            }
+        };
+    </script>
 </body>
 </html>
