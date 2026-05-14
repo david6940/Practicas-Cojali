@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio - David Miguel Garcia</title>
+    <title>Portfolio Dinámico - David Miguel Garcia</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="Style.css">
 </head>
+
 <body id="body">
 
     <header>
@@ -15,7 +17,7 @@
         </div>
         <nav class="menu">
             <a href="#sobre-mi">Sobre mí</a>
-            <a href="#educacion">Educación</a>
+            <a href="#estudios">Estudios</a>
             <a href="#proyectos">Proyectos</a>
             <a href="#registro">Registro</a>
         </nav>
@@ -24,7 +26,21 @@
     <main>
         <section id="sobre-mi" class="tarjeta">
             <h2>Sobre mí</h2>
-            <p>Hola, soy David. Me apasiona la programación y actualmente aprendiendo desarrollo web.</p>
+            <p>Hola, soy David. Me apasiona la programación y el desarrollo de interfaces dinámicas.</p>
+        </section>
+
+        <section id="estudios" class="tarjeta">
+            <h2>Mis Estudios</h2>
+            <div id="lista-estudios" class="grid-estudios">
+            </div>
+
+            <hr>
+            <h3>Añadir Estudios</h3>
+            <div class="formulario-estudios">
+                <input type="text" id="nuevo-titulo" class="campo" placeholder="Ej: Grado en Informática">
+                <input type="text" id="nueva-inst" class="campo" placeholder="Ej: Universidad de Madrid">
+                <button type="button" onclick="gestionarNuevoEstudio()">+ Añadir a la lista</button>
+            </div>
         </section>
 
         <section id="proyectos" class="tarjeta">
@@ -38,22 +54,21 @@
                     <h3>E-commerce</h3>
                     <p>Tienda sencilla en HTML/CSS.</p>
                 </div>
-                <div class="proyecto">
-                    <h3>Web de Viajes</h3>
-                    <p>Maquetación profesional.</p>
-                </div>
             </div>
         </section>
-
-        <section id="registro" class="tarjeta">
-            <h2 class="azul">DATOS DE REGISTRO</h2>
-            <form>
-                <input type="text" class="campo" placeholder="Nombre">
-                <input type="text" class="campo" placeholder="Email">
-                <button type="button">ENVIAR</button>
-            </form>
-        </section>
     </main>
+    
+    <section class="tarjeta">
+    <h2 class="azul">Buscador de Proyectos GitHub</h2>
+    <div class="formulario-estudios">
+        <input type="text" id="usuario-github" class="campo" placeholder="Escribe un usuario (ej: david6940)">
+        <button type="button" onclick="buscarGitHub()">Buscar Repositorios</button>
+    </div>
+
+    <div id="resultado-github" class="grid-estudios" style="margin-top: 20px;">
+        <p>Introduce un nombre para ver sus recuadros de proyectos.</p>
+    </div>
+</section>
 
     <footer>
         <p>&copy; 2026 David Miguel Garcia Garcia</p>
@@ -63,28 +78,7 @@
         </div>
     </footer>
 
-    <script>
-        const btn = document.getElementById('theme-toggle');
-        const body = document.getElementById('body');
-
-        // Cargar tema guardado (Punto 4)
-        if (localStorage.getItem('tema') === 'oscuro') {
-            body.classList.add('dark-mode');
-            btn.innerText = '☀️ Modo Claro';
-        }
-
-        btn.onclick = () => {
-            body.classList.toggle('dark-mode');
-            
-            // Guardar en localStorage (Punto 3)
-            if (body.classList.contains('dark-mode')) {
-                localStorage.setItem('tema', 'oscuro');
-                btn.innerText = '☀️ Modo Claro';
-            } else {
-                localStorage.setItem('tema', 'claro');
-                btn.innerText = '🌙 Modo Oscuro';
-            }
-        };
-    </script>
+    <script src="script.js"></script>
 </body>
+
 </html>
